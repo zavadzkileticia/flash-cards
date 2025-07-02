@@ -1,3 +1,10 @@
+:root {
+    --text-color: #DBE4EF;
+    --card-front-color: #144480;
+    --card-back-color: #00F4BF;
+}
+
+
 body {
  background: url(bg-desktop.webp);
     font-family: bai jamjuree;
@@ -9,20 +16,21 @@ display: flex;
 
 .cartao {
     margin: 1rem 1rem;
-    background-color: bisque;
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33%- 6rem);
 }
 
 .cartao__conteudo {
+    background-color: var(--card-front-color);
     text-align: center;
     background-color: antiquewhite;
     height: 100%;
 }
 
 .cartao__conteudo h3 {
-    background-color: bisque;
+  color: var(--text-color);
+   border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -34,6 +42,17 @@ display: flex;
 
 
 
+
+
+.cartao__conteudo__pergunta p{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.cartao__conteudo__resposta p {
+    color: var(--card-back-color);
+    font-weight: 700;
+}
 footer { 
     background-color: aquamarine;
     color: beige;
